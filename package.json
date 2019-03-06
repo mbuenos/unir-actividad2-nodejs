@@ -1,0 +1,20 @@
+{
+    "name": "actividad2-nodejs",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "marcobueno",
+    "contributors": [],
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "express": "^4.15.4",
+        "mongodb": "^2.1.20"
+    },"scripts":{
+"start":"node main.js"}
+}
+
