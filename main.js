@@ -10,6 +10,13 @@ var MongoClient = require('mongodb').MongoClient;
 
 
 app.get('/foro', function (req, res) {
+    if (req.headers['token']!="marcobueno"){
+        res.status(403);
+        res.json({
+           error:"token invalido" 
+        });
+        return;
+    }
     MongoClient.connect('mongodb://panamericano:itf1234@ds121135.mlab.com:21135/panamericano', 
     function(err, db) {
         console.log("Conectado al servidor")
@@ -213,8 +220,8 @@ app.post('/respuesta/:id', function (req, res) {
 })
 
 
-app.listen(8080, function() { 
-    console.log("funcionando en 8080")
+app.listen(5000, function() { 
+    console.log("funcionando en 5000")
 });
 
 
