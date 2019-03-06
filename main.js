@@ -220,8 +220,8 @@ app.post('/respuesta/:id', function (req, res) {
 })
 
 
-app.listen(8080, function() { 
-    console.log("funcionando en 8080")
+app.listen(5000, function() { 
+    console.log("funcionando en 5000")
 });
 
 
